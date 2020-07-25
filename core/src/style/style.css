@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Homenaje&family=Palanquin+Dark:wght@700&display=swap&family=Alata&display=swap');
+
+@font-face{
+    font-family: 'Kiona';
+    src: url(../fonts/Kiona-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none!important;
+    -webkit-user-drag: none;
+}
+.svg-icon {
+    width: 1em;
+    height: 1em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #000000;
+  }
+  
+  .svg-icon circle {
+    stroke: #000000;
+    stroke-width: 1;
+  }
+
+
+/* NAVBAR */
+.navbar{
+    background: rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(58, 58, 58, 0.4);
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+
+.navbar-logo img{
+    width: 100px;
+}
+
+.navbar-link{
+    padding-top: 15px;
+}
+
+.navbar-link ul{
+    display: flex;
+    flex-direction: row;
+}
+.navbar-link ul li{
+    list-style: none;
+    margin: 0px 20px;
+}
+.navbar-link ul li a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Alata';
+    transition: 0.2s;
+    padding-top: 22px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background: none;
+    border: none;
+    font-weight: 700;
+    font-family: 'Alata';
+    color: white;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    border: none!important;
+    
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid rgba(161, 161, 161, 0.1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(161, 161, 161, 0.3);
+    min-width: 300px;
+    padding: 20px;
+    z-index: 1;
+    animation: motionfade 0.3s ease-in-out;
+  }
+
+.dropdown-content span {
+    font-family: 'Kiona';
+    font-size: 12px;
+    color: rgb(156, 156, 156);
+} 
+  
+.dropdown-content a{
+    color: black!important;
+    margin: 10px 20px;
+    padding: 0!important;
+    text-decoration: none;
+    display: block;
+    font-family: 'Alata';
+    transition: 0.2s;
+  }
+
+.dropdown-content a:hover{
+    color: rgb(216, 103, 103)!important;
+}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.active-page{
+    color: rgb(216, 103, 103)!important;
+    border-top: 2px solid rgb(216, 103, 103);
+    padding-top: 22px;
+    cursor: default;
+}
+.product-list-fulllist{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding-top: 20px;
+    border-top: 1px solid rgb(223, 223, 223);
+    transition: 0.2s;
+}
+.product-list-fulllist:hover{
+    transform: translateX(10px);
+}
+.product-list-fulllist h2{
+    font-family: 'Didact Gothic';
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 5px;
+}   
+.product-list-fulllist svg{
+    font-size: 18px;
+    margin-top: -5px;
+}
+
+/* Inicio */
+.header-home{
+    background: url('../imgs/headerbackground.png') no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+}
+.header{
+    margin: 100px 0px;
+}
+.header-home
+,.header-title{
+    text-align: center;
+    font-family: 'Didact Gothic';
+}
+.header-home
+,.header-title a{
+    font-size: 20px;
+}
+.header-home h1{
+    color: white;
+    font-size: 70px;
+    font-family: 'Didact Gothic';
+}
+.header h1{
+    font-size: 60px;
+}
+.header-home h3{
+    font-family: 'Didact Gothic';
+    font-weight: 100;
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+    margin: 40px 0px 70px;
+    font-weight: 100;
+}
+.header h3{
+    font-size: 30px;
+    font-weight: 100;
+}
+.header-home a{
+    background: rgb(216, 103, 103);
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Didact Gothic';
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.header-home a:hover{
+    color: black;
+    text-decoration: none;
+}
+.header-home-title
+,.header-title span{
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 20px;
+}
+/* Home */
+.home-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px auto;
+    padding: 50px 30px;
+}
+.home-lefttab{
+    width: 900px;
+    padding: 0px 30px;
+}
+.home-rightab{
+    width: 400px;
+    padding: 0px 30px;
+}
+.home-features h1{
+    font-family: 'Alata';
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(146, 146, 146);
+}
+.featured-product{
+    background: rgb(243, 243, 243);
+    padding: 30px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+.featured-product h2{
+    font-size: 18px;
+    font-family: 'Didact Gothic';
+    font-weight: 700;
+}
+.product-see-more{
+    margin: auto 0px;
+    font-size: 30px;
+    transition: 0.2s;
+}
+.featured-product:hover{
+    background: rgb(238, 237, 237);
+}
+.featured-product:hover .product-see-more{
+    transform: translateX(10px);
+}
+.featured-product-fulllist{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+.featured-product-fulllist:hover{
+    transform: translateX(20px);
+}
+.featured-product-list h2{
+    font-family: 'Didact Gothic';
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+/*  */
+.center-line{
+    border-left: 1px solid rgb(221, 221, 221);
+}
+/*  */
+
+.home-youtube-preview h1{
+    font-family: 'Alata';
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(146, 146, 146);
+}
+.home-youtube-preview h2{
+    font-size: 18px;
+    font-family: 'Didact Gothic';
+    font-weight: 700;
+    background: black;
+    padding: 5px 10px 10px;
+    width: 240px;
+    text-align: center;
+    margin-bottom: -10px;
+    color: white;
+}
+.youtube-videos-preview{
+    display: flex;
+    flex-direction: column;
+}
+.youtube-video{
+    margin: 10px 0px;
+}
+.youtube-video img{
+    width: 300px;
+    border: 5px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 100px auto;
+    padding: 40px 20px;
+    background: rgb(243, 243, 243);
+    border-radius: 10px;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    font-family: 'Didact Gothic';
+}
+.receive-form{
+    width: 60%;
+}
+.acess-code-receive{
+    display: flex;
+    flex-direction: column;
+}
+.separate-two-options-line{
+    width: 10px;
+    margin: 0px 30px;
+    border-right: 1px solid rgb(197, 197, 197);
+}
+.acess-code-reedem{
+    display: flex;
+    flex-direction: column;
+}
+.form form h2{
+    font-family: 'Alata';
+}
+.form form h3{
+    font-size: 20px;
+}
+.form form span{
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.form form input{
+    background: none;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.form form textarea{
+    background: none;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    resize: none;
+}
+.form form input::placeholder,
+.form form textarea::placeholder{
+    color: rgb(192, 192, 192);
+    font-weight: 500;
+}
+
+.form form button,
+#button-submit-acess-code{
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 1px solid rgb(161, 161, 161);
+    background: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.2s ease-in;
+    font-family: 'Alata';
+}
+.form form button:hover,
+#button-submit-acess-code:hover{
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+.form .help{
+    padding: 50px 30px;
+    margin: 80px 0px;
+}
+.help .help-icon{
+    background: rgb(216, 103, 103);
+    width: 50px;
+    padding: 15px 10px;
+    transform: translateY(30px) translateX(-20px);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+.help .help-message{
+    background: rgb(0, 0, 0);
+    padding: 40px 30px 30px;
+    width: 500px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Alata';
+}
+.arrow-left {
+    transform: translateY(200px);
+    margin-left: -10px;
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    border-right:20px solid rgb(0, 0, 0); 
+}
+
+/* Acess Code */
+.acesscode-alerts{
+    margin: 40px 0px;
+}
+.error-message{
+    background: rgb(206, 90, 90);
+    font-family: 'Alata';
+    font-weight: 700;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+.success-message{
+    background: rgb(90, 206, 152);
+    font-family: 'Alata';
+    font-weight: 700;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+.reload-icon{
+    animation: reload 3s infinite;
+}
+
+footer span{
+    padding: 70px 20px;
+    font-family: 'Alata';
+    color: rgb(156, 156, 156);
+}
+
+#alert-message{
+    position: fixed;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    font-family: 'Alata';
+    animation: motionfade 0.6s;
+}
+.close-button-alert-message{
+    font-family: 'Kiona';
+    cursor: pointer;
+}
+.close-button-alert-message:hover{
+    color: rgb(216, 103, 103);
+}
+
+/* ANIMAÇÃO */
+@keyframes motionfade{
+    from{
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes infinityplaning{
+    0%{
+        transform: translateY(-5px) rotate(3deg);
+    }
+    25%{
+        transform: translateY(5px) rotate(3deg);
+    }
+    50%{
+        transform: translateY(-5px) rotate(3deg);
+    }
+    75%{
+        transform: translateY(5px) rotate(3deg);
+    }
+    100%{
+        transform: translateY(-5px) rotate(3deg);
+    }
+}
+
+@keyframes reload{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(720deg);
+    }
+}
+
+/* JERSEY */
+.jersey-product-container{
+    width: 90%;
+    margin: 0px auto;
+    padding-bottom: 70px;
+}
+.jersey-product-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.jersey-product-card-left{
+    background: url('../imgs/products/jersey/g2jerseybackground.png') no-repeat;
+    background-size: cover;
+    padding: 100px;
+    height: 650px;
+    width: 500px;
+    border-radius: 10px;
+}
+.jersey-product-card-left img{
+    width: 400px;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -20px;
+    animation: infinityplaning 10s infinite ease-in-out;
+}
+.jersey-product-card-right{
+    background: rgb(10, 10, 10);
+    color: white;
+    padding: 50px;
+    height: 100%;
+    padding-left: 300px;
+    border-radius: 40px;
+    margin-left: -300px;
+    margin-top: 110px;
+}
+.jersey-product-card-right-info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: auto;
+}
+.jersey-product-card-right-info h1{
+    font-family: 'Alata';
+    font-weight: 700;
+    font-size: 44px;
+    color: rgb(216, 103, 103);
+}
+.jersey-product-card-right-info span{
+    font-family: 'Didact Gothic';
+    font-size: 22px;
+    margin: 10px 0px;
+}
+.price{
+    margin-bottom: 30px;
+}
+.price span{
+    text-decoration: line-through;
+    font-family: 'Alata';
+    font-size: 20px;
+    color: rgb(68, 68, 68);
+}
+.price h3 strong{
+    font-size: 34px;
+    font-family: 'Alata';
+    font-weight: 700;
+}
+.jersey-product-card-right-info button{
+    background: rgb(209, 81, 81);
+    border: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    width: 200px;
+    border-radius: 5px;
+    margin: auto;
+}
+.jersey-product-card-right-info h6{
+    font-family: 'Alata';
+    font-size: 10px;
+    margin: 5px 10px;
+    color: rgb(68, 68, 68);
+}
+.product-information{
+    position: relative;
+    bottom: 0;
+    margin-top: 300px;
+    margin-left: 280px;
+}
+.information-icon{
+    background: rgb(216, 103, 103);
+    width: 50px;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-top: -20px;
+    margin-left: -30px;
+    position: absolute;
+}
+.information-message{
+    background: rgb(230, 229, 229);
+    padding: 30px;
+    border-radius: 5px;
+    width: 400px;
+    margin: 0px -10px;
+}
+.information-message h1{
+    font-family: 'Alata';
+    font-size: 24px;
+    font-weight: 700;
+}
+.product-compatibility h5{
+    font-family: 'Didact Gothic';
+    font-size: 14px;
+    margin: 10px 0px 20px;
+}
+.product-compatibility img{
+    width: 20px;
+}
+.information-message span{
+    font-family: 'Didact Gothic';
+    font-size: 17px;
+}
+
+/* wallpaper */
+.wallpaper-product-container{
+    width: 90%;
+    margin: 0px auto;
+    padding-bottom: 70px;
+}
+.wallpaper-product-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.wallpaper-product-card-left{
+    background: url('../imgs/products/wallpaper/wzbackgroung.png') no-repeat;
+    background-size: cover;
+    padding: 100px;
+    background-position-y: -200px;
+    height: 650px;
+    width: 500px;
+    border-radius: 10px;
+}
+.wallpaper-product-card-left img{
+    width: 1100px;
+    position: absolute;
+    margin-left: -400px;
+    margin-top: -70px;
+    animation: infinityplaning 10s infinite ease-in-out;
+}
+.wallpaper-product-card-right{
+    background: rgb(10, 10, 10);
+    color: white;
+    padding: 50px;
+    height: 100%;
+    padding-left: 300px;
+    border-radius: 40px;
+    margin-left: -300px;
+    margin-top: 110px;
+}
+.wallpaper-product-card-right-info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: auto;
+}
+.wallpaper-product-card-right-info h1{
+    font-family: 'Alata';
+    font-weight: 700;
+    font-size: 44px;
+    color: #d1a651;
+}
+.wallpaper-product-card-right-info span{
+    font-family: 'Didact Gothic';
+    font-size: 22px;
+    margin: 10px 0px;
+}
+
+.wallpaper-product-card-right-info h6{
+    font-family: 'Alata';
+    font-size: 10px;
+    margin: 5px 10px;
+    color: rgb(68, 68, 68);
+}
+
+/* streampack */
+.streampack-product-container{
+    width: 90%;
+    margin: 0px auto;
+    padding-bottom: 70px;
+}
+.streampack-product-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.streampack-product-card-left{
+    background: url('../imgs/products/streampack/streampackbackground.png') no-repeat;
+    background-size: cover;
+    padding: 100px;
+    height: 650px;
+    width: 500px;
+    border-radius: 10px;
+}
+.streampack-product-card-left img{
+    width: 500px;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -25px;
+    animation: infinityplaning 10s infinite ease-in-out;
+}
+.streampack-product-card-right{
+    background: rgb(10, 10, 10);
+    color: white;
+    padding: 50px;
+    height: 100%;
+    padding-left: 300px;
+    border-radius: 40px;
+    margin-left: -300px;
+    margin-top: 110px;
+}
+.streampack-product-card-right-info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: auto;
+}
+.streampack-product-card-right-info h1{
+    font-family: 'Alata';
+    font-weight: 700;
+    font-size: 44px;
+    color: #3d2df4;
+}
+.streampack-product-card-right-info span{
+    font-family: 'Didact Gothic';
+    font-size: 22px;
+    margin: 10px 0px;
+}
+
+.streampack-product-card-right-info h6{
+    font-family: 'Alata';
+    font-size: 10px;
+    margin: 5px 10px;
+    color: rgb(68, 68, 68);
+}

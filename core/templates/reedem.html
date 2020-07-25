@@ -1,0 +1,105 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reedem your Product</title>
+    <link rel="fav icon" href="../src/imgs/logo.png">
+    <link rel="stylesheet" href="../src/style/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"  rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<section class="header">
+    <div class="header-title">
+        <h1><strong>Thanks for your purchase!</strong></h1>
+        <h3>Now, let's reedem your Product.</h3>
+    </div>
+
+    <div class="form">
+        <form action="https://formspree.io/mlepovgo" method="POST" class="receive-form">
+            <div class="acess-code-receive">
+                <h2><strong>Receive your Acess Code here!</strong></h2>
+                <h3>Fill out this form if your purchase is a Mockup & Template and you still need an Acess Code to download your product!</h3>
+                <br>
+                <span>Your email</span>
+                <input type="email" name="_replyto" placeholder="youremail@domain">
+                <br>
+                <span>Your message</span>
+                <textarea name="message" rows="5" cols="50" placeholder="Hello. I had a purchase number ****. I need the acess code to download it."></textarea>
+                </label>
+                <br>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+
+        <div class="separate-two-options-line"></div>
+
+        <form class="reedem-form">
+            <div class="acess-code-reedem">
+                <h2><strong>Reedem your Product here!</strong></h2>
+                <h3>Insert your Acess Code below to download your product!</h3>
+                <br>
+                    <span><a title="Required" style="color: red;">*</a> Acess Code:</span>
+                    <input type="text" id="acess-code-input" required maxlength="8" max="8" min="8" minlength="8">
+                    <br>
+                    <span id="button-submit-acess-code" onclick="validate()">Send</span>
+
+                <div class="acesscode-alerts">
+                    <div class="error" id="error" style="display: none;">
+                        <div class="error-message">Error! This is an Invalid Acess Code. Try a correct acess code now!</div>
+                    </div>
+
+                    <div class="success" id="success" style="display: none;">
+                        <div class="success-message">Success! This is a Valid Acess Code. Redirecting you to download! <div"><svg class="svg-icon reload-icon" viewBox="0 0 20 20">
+                            <path fill="none" d="M19.305,9.61c-0.235-0.235-0.615-0.235-0.85,0l-1.339,1.339c0.045-0.311,0.073-0.626,0.073-0.949
+                                c0-3.812-3.09-6.901-6.901-6.901c-2.213,0-4.177,1.045-5.44,2.664l0.897,0.719c1.053-1.356,2.693-2.232,4.543-2.232
+                                c3.176,0,5.751,2.574,5.751,5.751c0,0.342-0.037,0.675-0.095,1l-1.746-1.39c-0.234-0.235-0.614-0.235-0.849,0
+                                c-0.235,0.235-0.235,0.615,0,0.85l2.823,2.25c0.122,0.121,0.282,0.177,0.441,0.172c0.159,0.005,0.32-0.051,0.44-0.172l2.25-2.25
+                                C19.539,10.225,19.539,9.845,19.305,9.61z M10.288,15.752c-3.177,0-5.751-2.575-5.751-5.752c0-0.276,0.025-0.547,0.062-0.813
+                                l1.203,1.203c0.235,0.234,0.615,0.234,0.85,0c0.234-0.235,0.234-0.615,0-0.85l-2.25-2.25C4.281,7.169,4.121,7.114,3.961,7.118
+                                C3.802,7.114,3.642,7.169,3.52,7.291l-2.824,2.25c-0.234,0.235-0.234,0.615,0,0.85c0.235,0.234,0.615,0.234,0.85,0l1.957-1.559
+                                C3.435,9.212,3.386,9.6,3.386,10c0,3.812,3.09,6.901,6.902,6.901c2.083,0,3.946-0.927,5.212-2.387l-0.898-0.719
+                                C13.547,14.992,12.008,15.752,10.288,15.752z"></path>
+                        </svg></div></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+<footer><span id="footer-info">All rights reserved, 2020 © PORMAZION.</span></footer>
+
+
+<div id="alert-message">
+    <span>This website is a lite and temporary version. We are still working in it!</span>
+    <span class="close-button-alert-message" onclick="closeAlertMessage()">X</span>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="../src/script/validation.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+<script>
+    function closeAlertMessage(){
+        document.getElementById('alert-message').style.display = 'none';
+        document.getElementById('footer-info').style.padding = '20px';
+    }
+</script>
+
+</body>
+</html>
