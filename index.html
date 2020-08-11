@@ -7,6 +7,7 @@
     <link rel="fav icon" href="core/src/imgs/logo.png">
     <link rel="stylesheet" href="core/src/style/style.css">
     <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"  rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -20,15 +21,15 @@
 
     <nav class="navbar">
         <div class="navbar-container">
-            <div class="navbar-logo">
+            <div class="navbar-logo" data-aos="fade-down" data-aos-duration="1000">
                 <img src="core/src/imgs/logo.png">
             </div>
         
             <div class="navbar-link">
                 <ul>
-                    <li><a class="active-page">Home</a></li>
+                    <li><a class="active-page" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Home</a></li>
                     <li><div class="dropdown">
-                        <button class="dropbtn">Products</button>
+                        <button class="dropbtn" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">Products</button>
                         <div class="dropdown-content">
                             <div class="product-list-jersey">
                                 <span>T-Shirt</span>
@@ -60,7 +61,7 @@
                         </div>
                     </div>
                     </li>
-                    <li><a href="core/templates/contact.html">Contact</a></li>
+                    <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400"><a href="core/templates/contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -71,12 +72,18 @@
 
 <section class="header-home">
     <div class="header-home-title">
-        <h1><strong>Welcome to PORMAZIONStore</strong>®</h1>
-        <h3>Explore this marketplace to buy T-Shirt, Stream Pack, Mockup & Template and others. <br>
+        <h1 data-aos="fade-down"  data-aos-duration="1000" data-aos-delay="400"><strong>Welcome to PORMAZIONStore</strong>®</h1>
+        <h3 data-aos="fade-down"  data-aos-duration="1000" data-aos-delay="500">Explore this marketplace to buy T-Shirt, Stream Pack, Mockup & Template and others. <br>
             <strong> Official store by PORMAZION™.</strong> Good to see you!</h3>
-        <a href="core/templates/orderform.html">Buy Here</a>
+        <a href="core/templates/orderform.html" data-aos="fade-down"  data-aos-duration="1000" data-aos-delay="600">Buy Here</a>
     </div>
   
+
+    <div class="wave-divider">
+        <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path class="wavePath-haxJK1" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="currentColor"></path>
+        </svg>
+    </div>
 </section>
 
 <section class="home">
@@ -87,7 +94,7 @@
 
                 <div class="featured-product-list">
 
-                    <div class="featured-product jersey" onclick="location.href = 'core/templates/jersey.html'">
+                    <div class="featured-product jersey" onclick="location.href = 'core/templates/jersey.html'" data-aos="fade-right"  data-aos-duration="1000" data-aos-delay='100'>
                         <div class="product-info">
                             <h2>Jersey</h2>
                             <div class="product-description">
@@ -105,14 +112,14 @@
                         </div>
                     </div>
 
-                    <div class="featured-product mockup" onclick="window.open('https://abre.ai/templatestore')">
-                        <div class="product-info">
+                    <div class="featured-product mockup" onclick="window.open('https://abre.ai/templatestore')"  data-aos="fade-right"  data-aos-duration="1000" data-aos-delay='200'>
+                        <div class="product-info" >
                             <h2>Template & Mockup</h2>
                             <div class="featured-product-description">
                                 <span>Template & Mockup is a blank model to do your own editable t-shirt</span>
                             </div>
                         </div>
-                        <div class="product-see-more">
+                        <div class="product-see-more" >
                             <svg class="svg-icon" viewBox="0 0 20 20">
                             <path fill="none" d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
                             l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
@@ -123,14 +130,14 @@
                         </div>
                     </div>
 
-                    <div class="featured-product streampack" onclick="location.href = 'core/templates/streampack.html'">
+                    <div class="featured-product streampack" onclick="location.href = 'core/templates/streampack.html'" data-aos="fade-right"  data-aos-duration="1000" data-aos-delay='300'>
                         <div class="product-info">
                             <h2>Stream Pack</h2>
                             <div class="featured-product-description">
                                 <span>Stream Pack is an objects that compose an appearance and informations in the streams </span>
                             </div>
                         </div>
-                        <div class="product-see-more">
+                        <div class="product-see-more" >
                             <svg class="svg-icon" viewBox="0 0 20 20">
                             <path fill="none" d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
                             l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
@@ -141,15 +148,15 @@
                         </div>
                     </div>
 
-                    <div class="featured-product wallpaper" onclick="location.href = 'core/templates/wallpapers.html'">
+                    <div class="featured-product wallpaper" onclick="location.href = 'core/templates/wallpapers.html'" data-aos="fade-right"  data-aos-duration="1000" data-aos-delay='400'>
                         <div class="product-info">
                             <h2>Gaming Wallpaper</h2>
-                            <div class="featured-product-description">
+                            <div class="featured-product-description" >
                                 <span>Have your beautiful desktop with unique edited gaming wallpapers</span>
                             </div>
                         </div>
                         <div class="product-see-more">
-                            <svg class="svg-icon" viewBox="0 0 20 20">
+                            <svg class="svg-icon" viewBox="0 0 20 20" >
                             <path fill="none" d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
                             l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
                             c-0.028,0.098-0.075,0.188-0.143,0.271c-0.021,0.026-0.021,0.061-0.045,0.085c-0.015,0.016-0.034,0.02-0.051,0.033l-5.483,5.483
@@ -159,9 +166,9 @@
                         </div>
                     </div>
 
-                    <div class="featured-product-fulllist fulllist" onclick="location.href = 'core/templates/products.html'">
+                    <div class="featured-product-fulllist fulllist" onclick="location.href = 'core/templates/orderform.html'"  data-aos="fade-right"  data-aos-duration="1000" data-aos-delay='500'>
                         <div class="product-info">
-                            <h2>See full list</h2>
+                            <h2>Pre-order</h2>
                         </div>
                         <div class="product-see-more">
                             <svg class="svg-icon" viewBox="0 0 20 20">
@@ -216,6 +223,12 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 <script>
     function closeAlertMessage(){
