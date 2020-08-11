@@ -7,6 +7,7 @@
     <link rel="fav icon" href="../src/imgs/logo.png">
     <link rel="stylesheet" href="../src/style/style.css">
     <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"  rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -92,12 +93,12 @@
 
 <section class="jersey-product">
     <div class="jersey-product-container">
-        <div class="jersey-product-card">
+        <div class="jersey-product-card" data-aos="fade-down" data-aos-duration="700">
             <div class="jersey-product-card-left">
                 <img src="../src/imgs/products/jersey/g2jersey.png">
                 <div class="card-left-image-information">
                 </div>
-                <div class="product-information">
+                <div class="product-information" data-aos="fade-right" data-aos-duration="700">
                     <div class="information-icon"><i class="fas fa-info"></i></div>
                     <div class="information-message">   
                         <h1>How is it works?</h1>
@@ -107,23 +108,24 @@
             </div>
             <div class="jersey-product-card-right">
                 <div class="jersey-product-card-right-info">
-                    <h1>Jersey | T-Shirt</h1>
-                    <span>Modern and sophisticated art on your own shirt.<br>
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">Jersey | T-Shirt</h1>
+                    <span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">Modern and sophisticated art on your own shirt.<br>
                          Icon, images, color, what you want to put in it becomes a model!</span>
-                    <div class="product-compatibility">
+                    <div class="product-compatibility" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
                         <h5>Compatible with: <span><img title="Photoshop" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Photoshop_CC_icon.png/615px-Photoshop_CC_icon.png"></span></h5>
                     </div>
-                        <div class="price">
+                        <div class="price" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                         <h3><span>19,00 USD</span><strong> 12,00 USD</strong></h3>
                     </div>
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="W3UFUEHZV8UJL">
                         <input type="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANAAAAAwCAYAAABg4PT2AAAEoElEQVR4Xu2dMUwTURjH/zgYYWqIMYGWdDGxQISYAMapQ4NIJxhZ2FwMYXDDxbjI5kCIixsLI0wqEIZORktiIAFq4tJY6KA2ncA4oLmjd/fu7t3xuIPmrv13o713993vfb9+33s0uY6urq5/4IsESCAQgQ4KFIgbB5GATsBXoMc9PZhKpTCYSODmjRtERgJtR+Dv2Rn263WsVyrYrFZd9+8p0Hwmg5l0uu2A8YZJwIvAarmMpVLJ9rFUIK3yvBoaIkkSIAEHgZd7e7ZKJBXo7egoHnR3Ex4JkICDwNdaDc+KRfNdqUCF8XGueZg6JCAhoK2Jsltb/gJ9mpggPBIgAQ8CjzY2KBCzgwSCEqBAQclxHAkAoEBMAxIIQYAChYDHoSRAgZgDJBCCAAUKAY9DSYACMQdIIAQBChQCHoeSAAViDpBACAIUKAQ8DiUBCsQcIIEQBCiQCrzaNwwXDqRHzmWn8bQdfqx++gPPP+5gG0Db3LNCblAgBUjwEUgbnhudxJvULZUzxfcYCiSdOwqkktKmQL1YfPIQ+U4AQkKhP4vdTKuXoRrerRWwzApkyxgKFFQgoSoZLc2vymfkiscABrAyfQ/D2rkd8o39No4RZARgjk2OYHusD7cdce2W1jB7CED7/D7wutFOAfbz6MMkFdNqu/7g/ZcPWDgSK6f1nvVl4BSGAslShQJdSiDnwYIoogQ+AuVhrSWs1k+W1PZrWQL1Ind0rK9FzJcgnXmc5L6M69lk1GQVq6kRu/mecY+GQBJhVRi26DEUSGVifddAVkKpVCCt/fNOYO/kFMUwqon1XmOcVE7heoYc5v005ND/riOXPMb2UeNcp42NE7M9pUCsQCqyyI6RrYFgtTR6WzXWByi0cPr6yaut81lLuaSTtId5I+mdbZ0rfrsMybLWHg5gcbSOheKxvinyArt6O+qukqxAYoqwAqlIJRXI/c2eVBUIVss2l51E8vv5msRve1hFIK/1lVPYfKfYMo6gv7iDZU3eOz/Pt+v7s1hBAbOHlOWi9KBAFxGSfdNrVUSsQI3WyBLISjxXm6WPFTcNjDWNfT3lDEtFIPn6StLCSa4PfSv+5HynLTmAORxgGeKGBls4tnAqsvi2cPITmG2O4lpJP4tt4Q79W99vK1xJIHF95bOJ4L6+IbywG6cdJMYk3Ftb/N9LMVdYgVRAXeKXCNZGQmPL+e4JcvqvGNztkFd1koWkKpCtupknkrViwhpO2DUU47e3lKxArEAqsjTxGKkUTbw+LxWeACtQeIbBziC0cGyJgiGMwigK1OxZcLaDHr88aHZYvF4wAhQoGLfgo0SBKE9wjhEZSYEiMhEMI54EKFA8541RR4QABYrIRDCMeBKgQPGcN0YdEQIUKCITwTDiSYACxXPeGHVECFCgiEwEw4gngQsF4iMe4zmxjPr6CSg94pEPGb7+ieAV4klA6SHDfMx9PCeXUV8/AaXH3GthzGcymEmnrz8iXoEEYkJgtVzGUqlki1b6mHvjCK0STaVSGEwk+Nj7mEwyw7xaAtqaZ79ex3qlgs1q1XVyX4GuNhSejQRajwAFar055R01kcB/Rwwazq+jjksAAAAASUVORK5CYII=" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                         <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
                     </form>
-                    <h6>* You will be redirected to PayPal!</h6>
+                    <h6 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">* You will be redirected to PayPal!</h6>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -142,6 +144,12 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 <script>
     function closeAlertMessage(){
