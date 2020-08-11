@@ -235,6 +235,7 @@
     cursor: pointer;
     transition: 0.2s;
     border-radius: 5px;
+    overflow: hidden;
 }
 .featured-product h2{
     font-size: 18px;
@@ -349,12 +350,23 @@
     font-weight: 700;
     margin: 10px 0px;
 }
-.form form input{
+.form form input,
+.form form select{
     background: none;
     border: 1px solid rgb(161, 161, 161);
     padding: 10px 10px;
     border-radius: 5px;
     font-weight: 700;
+}
+.form form select{
+    margin: 5px 0px;
+    width: 100%;
+}
+.form form select option{
+    background: black;
+    color: white;
+}
+.form form select option:hover{
 }
 .form form textarea{
     background: none;
@@ -551,6 +563,7 @@ footer span{
     border-radius: 40px;
     margin-left: -300px;
     margin-top: 110px;
+    overflow: hidden;
 }
 .jersey-product-card-right-info{
     display: flex;
