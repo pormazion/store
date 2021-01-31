@@ -115,15 +115,15 @@
   }
 
 .dropdown-content a:hover{
-    color: rgb(216, 103, 103)!important;
+    color: rgb(255, 0, 0)!important;
 }
   
 .dropdown:hover .dropdown-content {display: block;}
   
 .active-page{
-    color: rgb(216, 103, 103)!important;
-    border-top: 2px solid rgb(216, 103, 103);
-    padding-top: 22px;
+    color: rgb(252, 0, 0)!important;
+    border-top: 2px solid rgb(255, 0, 0);
+    padding-top: 32px;
     cursor: default;
 }
 .product-list-fulllist{
@@ -199,8 +199,8 @@
     font-weight: 100;
 }
 .header-home a{
-    background: rgb(216, 103, 103);
-    padding: 20px 60px;
+    background: rgb(243, 42, 42);
+    padding: 10px 60px;
     border-radius: 50px;
     font-size: 20px;
     font-family: 'Didact Gothic';
@@ -335,7 +335,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgb(255, 56, 56);
+    background: rgb(250, 17, 17);
     padding: 10px 20px 10px 25px;
     border-radius: 50px;
     font-size: 14px;
@@ -362,6 +362,13 @@
     width: 400px;
     margin-top: -30px;
     margin-left: -17px;
+}
+
+.product-info-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
 }
 
 .product-right-tab {
@@ -885,6 +892,18 @@ footer span{
     margin: 10px 0px;
     float: left;
 }
+
+.template-product-card-right-uppertitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.template-product-card-right-uppertitle h1 {
+    max-width: 340px;
+    margin-left: 20px;
+}
+
 .price{
     margin-bottom: 30px;
 }
