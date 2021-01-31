@@ -1,0 +1,252 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reedem your Product</title>
+    <link rel="fav icon" href="../src/imgs/logo.png">
+    <link rel="stylesheet" href="../src/style/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"  rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<body>
+    <section>
+        <!-- <div class="maintenance-message-alert">
+            <img src="../src/imgs/cleanup-img.png">
+            <h1>Ooops... We are doing some changes. Be right back!!</h1>
+            <span>Would you like make your own t-shirts? Check the button below!!</span>
+            <a href="https://pormazion.github.io/templatestore/imgs/index.html" target="_blank">Template Store</a>
+        </div> -->
+    
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <img src="../src/imgs/logo.png">
+                </div>
+            
+                <div class="navbar-link">
+                    <ul>
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"><a href="../../index.html">Home</a></li>
+                        <li><div class="dropdown">
+                            <button class="dropbtn" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Products</button>
+                            <div class="dropdown-content">
+                                <div class="product-list-jersey">
+                                    <span>T-Shirt</span>
+                                    <a href="../templates/jersey.html">Jersey</a>
+                                    <a href="../templates/templates.html">Template & Mockup</a>
+                                    <br>
+                                    <span>Product Design</span>
+                                    <a href="../templates/streampack.html">Stream Pack</a>
+                                    <a href="../templates/wallpapers.html">Gaming Wallpaper</a>
+                                    <br>
+                                    <span>Other Service</span>
+                                    <a href="orderform.html">Ask for a product</a>
+                                </div>
+                            </div>
+                        </div>
+                        </li>
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300"><a href="contact.html">Contact</a></li>
+                        <li class="navbar-download-product" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400"><a href="core/templates/reedem.html">Download your product!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+        <section class="header">
+            <div class="header-title">
+                <h1><strong>Templates & Mockup</strong></h1>
+                <h3>Create your own and unique clothes.</h3>
+            </div>
+        </section>
+
+    <section class="template-product">
+        <div class="template-product-container">
+            <div class="template-product-card">
+                <div class="template-product-card-left">
+                    <div class="template-image-slider">
+                        <div class="img-comp-container">
+                            <div class="img-comp-img">
+                              <img src="../src/imgs/products/mockup/shirt/g2jersey.png">
+                            </div>
+                            <div class="img-comp-img img-comp-overlay">
+                              <img src="../src/imgs/products/mockup/shirt/blankshirt.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-information">
+                        <div class="information-icon"><i class="fas fa-info"></i></div>
+                        <div class="information-message">   
+                            <h1>How is it works?</h1>
+                            <span>After clicking in <strong>"Buy now!"</strong> button you will be redirected to PayPal. When you payment have been confirmed, you will receive a Access Code to download your product!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-product-card-right">
+                    <div class="template-product-card-right-info">
+                        <div class="template-product-card-right-title">
+                            <h1>Template: Jersey</h1>
+                            <span>Make awesome jersey design to you and to teams with this powerful smart blank template!</span>
+                        </div>
+                        <div class="product-compatibility">
+                            <h5>Compatible with: <span><img title="Photoshop" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Photoshop_CC_icon.png/615px-Photoshop_CC_icon.png"></span></h5>
+                        </div>
+                        <div class="price">
+                            <h3><span>20,00 USD</span><strong> 14,00 USD</strong></h3>
+                        </div>
+                        <div id="smart-button-container">
+                            <div style="text-align: center;">
+                              <div id="paypal-button-container"></div>
+                            </div>
+                          </div>
+                        <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+                        <script>
+                          function initPayPalButton() {
+                            paypal.Buttons({
+                              style: {
+                                shape: 'rect',
+                                color: 'blue',
+                                layout: 'vertical',
+                                label: 'paypal',
+                                
+                              },
+                      
+                              createOrder: function(data, actions) {
+                                return actions.order.create({
+                                  purchase_units: [{"description":"Jersey Template is a blank model to make stylish t-shirts","amount":{"currency_code":"USD","value":14}}]
+                                });
+                              },
+                      
+                              onApprove: function(data, actions) {
+                                return actions.order.capture().then(function(details) {
+                                  alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                });
+                              },
+                      
+                              onError: function(err) {
+                                console.log(err);
+                              }
+                            }).render('#paypal-button-container');
+                          }
+                          initPayPalButton();
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<footer><span id="footer-info">All rights reserved, 2020 © PORMAZION.</span></footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<script>
+    AOS.init();
+</script>
+
+<script>
+    function closeAlertMessage(){
+        document.getElementById('alert-message').style.display = 'none';
+        document.getElementById('footer-info').style.padding = '20px';
+    }
+</script>
+
+<script>
+
+function initComparisons() {
+  var x, i;
+  /* Find all elements with an "overlay" class: */
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /* Once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function: */
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /* Get the width and height of the img element */
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /* Set the width of the img element to 50%: */
+    img.style.width = (w / 2) + "px";
+    /* Create slider: */
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /* Insert slider */
+    img.parentElement.insertBefore(slider, img);
+    /* Position the slider in the middle: */
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /* Execute a function when the mouse button is pressed: */
+    slider.addEventListener("mousedown", slideReady);
+    /* And another function when the mouse button is released: */
+    window.addEventListener("mouseup", slideFinish);
+    /* Or touched (for touch screens: */
+    slider.addEventListener("touchstart", slideReady);
+     /* And released (for touch screens: */
+    window.addEventListener("touchstop", slideFinish);
+    function slideReady(e) {
+      /* Prevent any other actions that may occur when moving over the image: */
+      e.preventDefault();
+      /* The slider is now clicked and ready to move: */
+      clicked = 1;
+      /* Execute a function when the slider is moved: */
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /* The slider is no longer clicked: */
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /* If the slider is no longer clicked, exit this function: */
+      if (clicked == 0) return false;
+      /* Get the cursor's x position: */
+      pos = getCursorPos(e)
+      /* Prevent the slider from being positioned outside the image: */
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /* Execute a function that will resize the overlay image according to the cursor: */
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = e || window.event;
+      /* Get the x positions of the image: */
+      a = img.getBoundingClientRect();
+      /* Calculate the cursor's x coordinate, relative to the image: */
+      x = e.pageX - a.left;
+      /* Consider any page scrolling: */
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /* Resize the image: */
+      img.style.width = x + "px";
+      /* Position the slider: */
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+
+</script>
+
+<script>
+initComparisons();
+</script>   
+   
+
+</body>
+</html>
