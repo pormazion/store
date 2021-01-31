@@ -515,10 +515,13 @@
     text-align: right;
 }
 
-#button-submit-acess-code {
+#button-submit-acess-code,
+.buy-template-button {
     border: none !important;
     background: black !important;
     color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
     width: 200px !important;
     max-width: 200px !important;
     margin-right: 20px !important;
