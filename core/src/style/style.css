@@ -751,7 +751,7 @@
 }
 
 footer span{
-    padding: 70px 20px;
+    padding: 20px 20px;
     font-family: 'Alata';
     color: rgb(156, 156, 156);
 }
@@ -838,8 +838,19 @@ footer span{
 }
 .template-product-card-left img{
     width: 300px;
-   
 }
+
+
+.hoodie .img-comp-img {
+    width: 500px;
+    margin-top: -40px;
+}
+
+.hoodie .img-comp-img img{
+    width: 500px;
+}
+
+
 .template-product-card-right{
     background: rgb(10, 10, 10);
     color: white;
@@ -969,7 +980,7 @@ footer span{
     z-index: 9;
     top: 0;
     bottom: 0;
-    cursor: grab;
+    cursor: grab !important;
     /*set the appearance of the slider:*/
     width: 40px;
     height: 40px;
@@ -979,7 +990,7 @@ footer span{
     box-shadow: 0px 0px 30px rgb(88, 88, 88);
   }
   .img-comp-slider:active{
-      cursor: grabbing;
+      cursor: grabbing !important;
   }
 
 
@@ -1098,14 +1109,27 @@ footer span{
     font-size: 24px;
     font-weight: 700;
 }
+.product-compatibility {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .product-compatibility h5{
     font-family: 'Didact Gothic';
     font-size: 14px;
-    margin: 10px 0px 20px;
+    color: gray;
+    margin-right: 10px;
 }
 .product-compatibility img{
     width: 20px;
 }
+.product-compatibility-divisor {
+    padding: 0px 15px 0px 10px;
+    margin-top: -10px;
+}
+
 .information-message span{
     font-family: 'Didact Gothic';
     font-size: 17px;
