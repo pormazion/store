@@ -135,23 +135,15 @@
 
                               onApprove: function(data, actions) {
                                 return actions.order.capture().then(function(orderData) {
-
-                                  // Full available details
-                                  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-                                  // Show a success message within this page, e.g.
-                                  const element = document.getElementById('paypal-button-container');
-                                  element.innerHTML = '';
-                                  element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-                                  actions.redirect('reedem.html');
-                                  alert('Your access code is: Jc83uW17, Dont share it with anyone')
-
+                                  localStorage.setItem('ea91af8f9f7b35bf466115ee732177d7d3abd6df', orderData.payer.email_address)
+                                  window.location.assign('reedem.html');
+                                  alert('Your buy has been successfully completed! You can check it in paypal! Now, we will redirect you to download your product!')
                                 });
                               },
 
                               onError: function(err) {
                                 console.log(err);
+                                alert('Your payment was not processed, then failed! Please try again.');
                               }
                             }).render('#paypal-button-container');
                           }
