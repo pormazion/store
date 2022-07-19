@@ -11,5 +11,10 @@ function validate(){
             success.style.display = "none";
             window.location.assign("https://drive.google.com/open?id=187xPHh6LqML9EV9D_3xsO0IRF99G5Rt4");
         }, 3000)
+    } else {
+        error.style.display = "block";
+        setTimeout(function(){
+            error.style.display = "none";
+        }, 3000)  
     }
 }             
